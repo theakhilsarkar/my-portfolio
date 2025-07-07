@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 
+
 const Navbar = () => {
   return (
     <nav className="w-full fixed top-0 left-0 z-50 bg-[#0f0f0f] text-white">
