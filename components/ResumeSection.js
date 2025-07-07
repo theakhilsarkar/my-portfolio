@@ -30,7 +30,7 @@ const ResumeSection = () => {
   const [activeTab, setActiveTab] = useState("Experience");
 
   return (
-    <section id="resume" className="bg-[#1a1a1a] text-white py-20 px-6">
+    <section id="resume" className="bg-[#1a1a1a] text-white py-15 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Titles */}
         <div className="flex flex-col md:flex-row justify-between mb-10">
