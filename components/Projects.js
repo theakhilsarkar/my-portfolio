@@ -35,7 +35,7 @@ const Projects = () => {
     setCurrent((prev) => (prev - 1 + projects.length) % projects.length);
 
   return (
-    <section id="work" className="bg-[#0f0f0f] text-white py-20 px-6">
+    <section id="projects" className="bg-[#0f0f0f] text-white py-20 px-6">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
         {/* LEFT: TEXT */}
         <div className="flex-1">
