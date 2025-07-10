@@ -45,7 +45,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="w-full h-auto py-16 bg-[#0f0f0f] text-white flex items-center justify-center"
+      className="w-full min-h-[70vh] py-16 bg-[#0f0f0f] text-white flex items-center justify-center"
     >
       <div className="max-w-7xl w-full px-6 md:px-16 flex flex-col lg:flex-row items-start justify-between gap-10">
         {/* LEFT TEXT */}
@@ -54,10 +54,7 @@ const Hero = () => {
             Full Stack Application & Website Developer
           </p>
           <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-2">
-            Hello I’m{" "}
-            <span className="text-green-400">
-              {userData.name || "Akhil Sarkar"}
-            </span>
+            Hello I’m <span className="text-green-400">{"Akhil Sarkar"}</span>
           </h1>
           <p className="text-gray-400 text-lg max-w-xl mb-6">
             {userData.bio ||

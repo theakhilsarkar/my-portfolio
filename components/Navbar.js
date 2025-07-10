@@ -15,7 +15,9 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full bg-black text-white shadow z-50">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="text-2xl font-bold text-green-400">Akhil</div>
+        <div className="text-2xl font-bold text-green-400">
+          Akhil<span>.</span>
+        </div>
 
         <ul className="flex space-x-6">
           {navLinks.map((link) => (

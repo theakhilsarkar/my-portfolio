@@ -5,26 +5,73 @@ const tabs = ["Experience", "Education", "Skills", "About me"];
 
 const experiences = [
   {
-    time: "2022 - Present",
-    role: "FULL Stack Developer",
-    company: "Tech Solutions Inc.",
+    time: "2024 - Present",
+    role: "IT Trainer - Full Stack Development",
+    company: "Red & White Skill Education",
   },
   {
-    time: "2020 - 2021",
-    role: "Freelance Web Developer",
-    company: "E-commerce Startup",
+    time: "2024 - Present",
+    role: "Freelance Application Developer - Flutter",
+    company: "Self-Employed",
   },
   {
-    time: "Summer 2021",
-    role: "Front-End Developer Intern",
-    company: "Web Design Studio",
-  },
-  {
-    time: "2019 - 2020",
-    role: "Teaching Assistant",
-    company: "Tech Academy",
+    time: "2023 - 2025",
+    role: "IT Trainer - Flutter App. Development",
+    company: "Red & White Skill Education",
   },
 ];
+
+const education = [
+  {
+    time: "2025 - Present",
+    degree: "MBA - Data Science & Business Analytics",
+    institution: "Saurashtra University",
+  },
+  {
+    time: "2022 - 2025",
+    degree: "BCA",
+    institution: "Swarnim Startup & Innovation University Gandhinagar",
+  },
+  {
+    time: "2019 - 2021",
+    degree: "B.Tech (Computer Engineering)",
+    institution: "RK University Rajkot",
+  },
+  {
+    time: "2018 - 2019",
+    degree: "HSC - Science Stream - A",
+    institution: "Shree Swaminarayan Gurukul Rajkot",
+  },
+];
+
+const skills = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React.js",
+  "Next.js",
+  "Node.js",
+  "Express.js",
+  "MongoDB",
+  "PHP",
+  "MySQL",
+  "Firebase",
+  "Flutter",
+  "C",
+  "C++",
+  "Java",
+  "jQuery",
+  "Bootstrap",
+  "Tailwind CSS",
+  "Git",
+  "GitHub",
+];
+
+const aboutMe = `
+I'm Akhil Sodvadiya, a passionate IT Trainer and Full Stack Developer with a strong foundation in both frontend and backend development.
+I enjoy teaching, mentoring, and building modern web & mobile apps.
+My mission is to simplify technology education for everyone.
+`;
 
 const ResumeSection = () => {
   const [activeTab, setActiveTab] = useState("Experience");
@@ -37,14 +84,15 @@ const ResumeSection = () => {
           <div className="mb-6 md:mb-0">
             <h2 className="text-4xl font-bold">Why hire me?</h2>
             <p className="text-gray-400 mt-2 max-w-md">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              I'm a versatile developer and educator with a passion for learning
+              and helping others grow through technology.
             </p>
           </div>
           <div>
-            <h2 className="text-3xl font-bold">My experience</h2>
+            <h2 className="text-3xl font-bold">My Journey</h2>
             <p className="text-gray-400 mt-2 max-w-md">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
-              et, et.
+              From coding and mentoring to building real-world projects, my
+              experience bridges knowledge with impact.
             </p>
           </div>
         </div>
@@ -82,8 +130,32 @@ const ResumeSection = () => {
                 </div>
               ))}
 
-            {activeTab !== "Experience" && (
-              <p className="text-gray-400 col-span-2">Coming soon...</p>
+            {activeTab === "Education" &&
+              education.map((item, index) => (
+                <div
+                  key={index}
+                  className="bg-[#2b2b2b] p-4 rounded-md font-mono"
+                >
+                  <p className="text-green-400 text-sm mb-1">{item.time}</p>
+                  <h4 className="text-lg font-bold">{item.degree}</h4>
+                  <p className="text-gray-400 mt-1">{item.institution}</p>
+                </div>
+              ))}
+
+            {activeTab === "Skills" &&
+              skills.map((skill, index) => (
+                <div
+                  key={index}
+                  className="bg-[#2b2b2b] p-4 rounded-md font-mono text-center"
+                >
+                  <p className="text-green-400 font-semibold">{skill}</p>
+                </div>
+              ))}
+
+            {activeTab === "About me" && (
+              <div className="col-span-2 bg-[#2b2b2b] p-6 rounded-md font-mono leading-7">
+                <p className="text-gray-300 whitespace-pre-line">{aboutMe}</p>
+              </div>
             )}
           </div>
         </div>
