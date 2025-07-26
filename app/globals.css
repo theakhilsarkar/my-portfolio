@@ -15,21 +15,28 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Custom scrollbar (optional) */
+/* Custom Scrollbar for WebKit */
 ::-webkit-scrollbar {
   width: 8px;
+  /* width of scrollbar */
 }
 
 ::-webkit-scrollbar-track {
-  background: #1f2937;
-  /* gray-800 */
+  background: #1a1a1a;
+  /* track color */
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #0ea5e9;
-  /* cyan-500 */
+  background-color: #16a34a;
+  /* scrollbar color (green) */
   border-radius: 4px;
 }
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #22c55e;
+  /* hover effect */
+}
+
 
 @keyframes spin-slow {
   0% {
