@@ -5,10 +5,17 @@ import { ArrowUpRight, Github, ChevronLeft, ChevronRight } from "lucide-react";
 const projects = [
   {
     id: "01",
-    title: "Frontend Project",
+    title: "Saraswati & Sunrise School ERP",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque consequat, faucibus et, et.",
-    stack: ["Html 5", "Css 3", "Javascript"],
+      "ERP system for Saraswati & Sunrise School, with features like student management, teacher management, and attendance tracking, Fees management, and more.",
+    stack: [
+      "Flutter",
+      "Firebase",
+      "Dart",
+      "Shared Preferences",
+      "PHP for Backend",
+      "MySQL",
+    ],
     image: "/project1.png", // ✅ Place your image in public folder
     liveLink: "#",
     githubLink: "#",

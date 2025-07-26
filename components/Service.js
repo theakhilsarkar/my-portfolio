@@ -5,23 +5,28 @@ import { FiArrowDownRight } from "react-icons/fi";
 const services = [
   {
     id: "01",
-    title: "Web Development",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque consequat, faucibus et, et.",
+    title: "Application Development",
+    desc: "We are delivering high-quality and innovative applications for businesses of all sizes using Flutter.",
   },
   {
     id: "02",
     title: "UI/UX Design",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque consequat, faucibus et, et.",
+    desc: "We are delivering innovative and modern UI/UX Design of Applications & Websites according to current trends using Figma",
   },
   {
     id: "03",
     title: "Logo Design",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque consequat, faucibus et, et.",
+    desc: "A Unique and creative logo design for your business.",
   },
   {
     id: "04",
-    title: "SEO",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque consequat, faucibus et, et.",
+    title: "Resume Writing & Guidance",
+    desc: "We will help you to write a perfect resume for your dream job.",
+  },
+  {
+    id: "05",
+    title: "Web Development",
+    desc: "We are delivering best web development services for your business.",
   },
 ];
 
