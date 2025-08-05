@@ -68,7 +68,7 @@ const skills = [
 ];
 
 const aboutMe = `
-I'm Akhil Sodvadiya, a passionate IT Trainer and Full Stack Developer with a strong foundation in both frontend and backend development.
+I&apos;m Akhil Sodvadiya, a passionate IT Trainer and Full Stack Developer with a strong foundation in both frontend and backend development.
 I enjoy teaching, mentoring, and building modern web & mobile apps.
 My mission is to simplify technology education for everyone.
 `;
@@ -84,8 +84,8 @@ const ResumeSection = () => {
           <div className="mb-6 md:mb-0">
             <h2 className="text-4xl font-bold">Why hire me?</h2>
             <p className="text-gray-400 mt-2 max-w-md">
-              I'm a versatile developer and educator with a passion for learning
-              and helping others grow through technology.
+              I&apos;m a versatile developer and educator with a passion for
+              learning and helping others grow through technology.
             </p>
           </div>
           <div>

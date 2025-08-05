@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { ArrowUpRight, Github, ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 const projects = [
   {
@@ -93,9 +94,11 @@ const Projects = () => {
 
         {/* RIGHT: IMAGE */}
         <div className="flex-1">
-          <img
+          <Image
             src={project.image}
             alt={project.title}
+            width={500}
+            height={300}
             className="rounded-lg shadow-lg"
           />
         </div>
